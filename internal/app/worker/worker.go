@@ -9,7 +9,7 @@ import (
 )
 
 func Run(cfg config.Config, out io.Writer) error {
-	ticker := time.NewTicker(time.Duration(cfg.WorkerPollMS) * time.Millisecond)
+	ticker := time.NewTicker(time.Duration(cfg.WorkerPollMs) * time.Millisecond)
 	defer ticker.Stop()
 
 	fmt.Fprintln(out, "worker started (skeleton mode)")
