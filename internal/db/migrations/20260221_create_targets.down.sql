@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS webhookq.targets;
+DROP SCHEMA IF EXISTS webhookq;
+DROP EXTENSION IF EXISTS pgcrypto;
